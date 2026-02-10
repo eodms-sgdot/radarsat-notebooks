@@ -1,14 +1,14 @@
-# rcm-ard-stac-examples
+# radarsat-notebooks
 
-[français](https://github.com/eodms-sgdot/rcm-ard-stac-examples/tree/main?tab=readme-ov-file#aper%C3%A7u)
+[français](https://github.com/eodms-sgdot/radarsat-notebooks/tree/main?tab=readme-ov-file#aper%C3%A7u)
 
 ## Overview
 This repository contains the following example workflows for accessing and manipulating analysis-ready data (ARD) products based on RADARSAT Constellation Mission (RCM) imagery from NRCan's Earth Observation Data Management System (EODMS) SpatioTemporal Asset Catalog (STAC) in JupyterLab Python Notebooks:
-- [rcm_ard_stac_example.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/rcm_ard_stac_example.ipynb) - instructions on how to access ARD products from the STAC catalog by identifying specific RCM scenes based on a datetime range and spatial bounding box.
-- [mchi_decomposition.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/mchi_decomposition.ipynb) - separation of an RCM-ARD image into surface (or single/odd) bounce, volume, and double (or even) bounce  scattering components.
-- [coordinate_transformations.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/coordinate_transformations.ipynb) - examples of how to read data directly from the STAC into various coordinate reference systems and reprojecting them to match the projection of other raster arrays already loaded in memory.
-- [rrrl_to_rhrv.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/rrrl_to_rhrv.ipynb) - simple and lossless conversion of ARD products from their circular polarizations of RR, RL, RRRL* to match RCM's operating configuration of RH, RV, RHRV*.
-- [radarsat1_l1_processing.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/radarsat1_l1_processing.ipynb) - instructions on how to discover raw RADARSAT-1 scenes from the EODMS Search service (STAC), evaluate their coverage over an area of interest, submit scenes to the EODMS Processing service (OGC Processes) for Level-1 processing, and download the resulting image products. Currently available for verified EODMS users only.
+- [rcm_ard_stac_example.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/rcm_ard_stac_example.ipynb) - instructions on how to access ARD products from the STAC catalog by identifying specific RCM scenes based on a datetime range and spatial bounding box.
+- [mchi_decomposition.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/mchi_decomposition.ipynb) - separation of an RCM-ARD image into surface (or single/odd) bounce, volume, and double (or even) bounce  scattering components.
+- [coordinate_transformations.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/coordinate_transformations.ipynb) - examples of how to read data directly from the STAC into various coordinate reference systems and reprojecting them to match the projection of other raster arrays already loaded in memory.
+- [rrrl_to_rhrv.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/rrrl_to_rhrv.ipynb) - simple and lossless conversion of ARD products from their circular polarizations of RR, RL, RRRL* to match RCM's operating configuration of RH, RV, RHRV*.
+- [radarsat1_l1_processing.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/radarsat1_l1_processing.ipynb) - instructions on how to discover raw RADARSAT-1 scenes from the EODMS Search service (STAC), evaluate their coverage over an area of interest, submit scenes to the EODMS Processing service (OGC Processes) for Level-1 processing, and download the resulting image products. Currently available for verified EODMS users only.
 
 ### Links
 - [Registry of Open Data on AWS - RCM CEOS Analysis Ready Data](https://registry.opendata.aws/rcm-ceos-ard/)
@@ -60,12 +60,12 @@ Git is required to clone this repository and install the `eodms_dds` Python pack
 
 1. In a terminal window, clone the repository into your virtual environment. Installation into your system's base Python environment is not recommended:
 	```bash
-	> git clone https://github.com/eodms-sgdot/rcm-ard-stac-examples.git
+	> git clone https://github.com/eodms-sgdot/radarsat-notebooks.git
 	```
 
 2. Install required Python packages:
 	```bash
-	> cd rcm-ard-stac-examples
+	> cd radarsat-notebooks
     > pip install -r requirements.txt
 	```
 
@@ -111,11 +111,11 @@ DEALINGS IN THE SOFTWARE.
 
 Ce dépôt contient les exemples de flux de travail suivants, utilisant le langage Python et les "Jupyter notebooks ", permettant d’accéder et de manipuler les données prêtes à l'analyse (DPA) à partir des images de la mission de la Constellation RADARSAT (MCR), issues du catalogue STAC (Spatio-Temporal Asset Catalog) du système de gestion des données d'observation de la Terre (SGDOT) de RNCan :
 
-- [rcm_ard_stac_example.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/rcm_ard_stac_example.ipynb) - instructions pour accéder aux données MCR-DPA du catalogue STAC par l’identification de scènes de la MCR selon une sélection de plage de dates et d’une emprise géométrique minimale *(bounding box)*.
-- [mchi_decomposition.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/mchi_decomposition.ipynb) - décomposition  d’une image en polarimétrie compacte de  de la MCR-DPA entre ses composantes de diffusion de surface (ou bond unique/impairs), volumique et double rebond (ou bond pairs). 
-- [coordinate_transformations.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/coordinate_transformations.ipynb) - exemples de lecture de données depuis le catalogue STAC dans divers systèmes de référence de coordonnées, suivis de leur reprojection pour assurer la compatibilité avec d’autres rasters déjà en mémoire. 
-- [rrrl_to_rhrv.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/rrrl_to_rhrv.ipynb) - conversion simple et sans perte des produits DPA, passant des polarisations circulaires RR, RL, RRRL* vers les polarisations linéaires RH, RV, RHRV*, correspondant à  la configuration opérationnelle de la MCR.
-- [radarsat1_l1_processing.ipynb](https://github.com/eodms-sgdot/rcm-ard-stac-examples/blob/main/examples/radarsat1_l1_processing.ipynb) - instructions pour découvrir des données brutes du satellite RADARSAT-1 à partir du service de recherche SGDOT (STAC), évaluer leur couverture d'une zone d'intérêt, soumettre ces données au service de traitement SGDOT *(OGC Processes)* pour créer des produits de niveau 1, et télécharger les produits d'image résultants. Actuellement réservé seulement aux utilisateurs approuvés du SGDOT.
+- [rcm_ard_stac_example.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/rcm_ard_stac_example.ipynb) - instructions pour accéder aux données MCR-DPA du catalogue STAC par l’identification de scènes de la MCR selon une sélection de plage de dates et d’une emprise géométrique minimale *(bounding box)*.
+- [mchi_decomposition.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/mchi_decomposition.ipynb) - décomposition  d’une image en polarimétrie compacte de  de la MCR-DPA entre ses composantes de diffusion de surface (ou bond unique/impairs), volumique et double rebond (ou bond pairs). 
+- [coordinate_transformations.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/coordinate_transformations.ipynb) - exemples de lecture de données depuis le catalogue STAC dans divers systèmes de référence de coordonnées, suivis de leur reprojection pour assurer la compatibilité avec d’autres rasters déjà en mémoire. 
+- [rrrl_to_rhrv.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/rrrl_to_rhrv.ipynb) - conversion simple et sans perte des produits DPA, passant des polarisations circulaires RR, RL, RRRL* vers les polarisations linéaires RH, RV, RHRV*, correspondant à  la configuration opérationnelle de la MCR.
+- [radarsat1_l1_processing.ipynb](https://github.com/eodms-sgdot/radarsat-notebooks/blob/main/examples/radarsat1_l1_processing.ipynb) - instructions pour découvrir des données brutes du satellite RADARSAT-1 à partir du service de recherche SGDOT (STAC), évaluer leur couverture d'une zone d'intérêt, soumettre ces données au service de traitement SGDOT *(OGC Processes)* pour créer des produits de niveau 1, et télécharger les produits d'image résultants. Actuellement réservé seulement aux utilisateurs approuvés du SGDOT.
 
 ### Liens
 - [Registre des données ouvertes sur AWS - données de la MCR-CEOS prêtes à l’analyse](https://registry.opendata.aws/rcm-ceos-ard/)
@@ -170,12 +170,12 @@ Des informations supplémentaires au sujet  projet Jupyter et de  l'utilisation 
 
 1. Dans une fenêtre de terminal, clonez le dépôt dans votre environnement virtuel. L’installation dans l’environnement Python par défaut de votre système n’est pas recommandée :
 	```bash
-	> git clone https://github.com/eodms-sgdot/rcm-ard-stac-examples.git
+	> git clone https://github.com/eodms-sgdot/radarsat-notebooks.git
 	```
 
 2.	Installer les paquets de Python requis :
 	```bash
-	> cd rcm-ard-stac-examples
+	> cd radarsat-notebooks
     > pip install -r requirements.txt
 	```
 
