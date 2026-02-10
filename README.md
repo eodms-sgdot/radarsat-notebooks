@@ -1,5 +1,4 @@
-# rcm-ard-stac-examples
-
+# radarsat-notebooks
 [français](https://github.com/eodms-sgdot/rcm-ard-stac-examples/tree/main?tab=readme-ov-file#aper%C3%A7u)
 
 ## Overview
