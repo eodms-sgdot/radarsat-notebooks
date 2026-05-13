@@ -13,7 +13,7 @@ This repository contains the following example workflows for accessing and manip
 ### Links
 - [Registry of Open Data on AWS - RCM CEOS Analysis Ready Data](https://registry.opendata.aws/rcm-ceos-ard/)
 - [rcm-ard collection on EODMS STAC API](https://www.eodms-sgdot.nrcan-rncan.gc.ca/search/collections/rcm-ard)
-- [STAC Browser Overview - RADARSAT Constellation Mission, CEOS-ARD](https://radiantearth.github.io/stac-browser/#/external/www.eodms-sgdot.nrcan-rncan.gc.ca/stac/collections/rcm-ard?.language=en)
+- [STAC Browser Overview - RADARSAT Constellation Mission, CEOS-ARD](https://radiantearth.github.io/stac-browser/#/external/eodms-sgdot.nrcan-rncan.gc.ca/search/collections/rcm-ard?.language=en)
 
 ## Requirements
 
@@ -120,7 +120,7 @@ Ce dépôt contient les exemples de flux de travail suivants, utilisant le langa
 ### Liens
 - [Registre des données ouvertes sur AWS - données de la MCR-CEOS prêtes à l’analyse](https://registry.opendata.aws/rcm-ceos-ard/)
 - [Collection de données de la MCR-DPA sur l’IPA SGDOT-STAC](https://www.eodms-sgdot.nrcan-rncan.gc.ca/search/collections/rcm-ard)
-- [Aperçu du Navigateur STAC pour visualiser les données de la Mission de la Constellation RADARSAT en format CEOS-DPA](https://radiantearth.github.io/stac-browser/#/external/www.eodms-sgdot.nrcan-rncan.gc.ca/stac/collections/rcm-ard?.language=fra)
+- [Aperçu du Navigateur STAC pour visualiser les données de la Mission de la Constellation RADARSAT en format CEOS-DPA](https://radiantearth.github.io/stac-browser/#/external/eodms-sgdot.nrcan-rncan.gc.ca/search/collections/rcm-ard?.language=fra)
 
 ## Exigences
 
